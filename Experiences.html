@@ -72,17 +72,17 @@
 
         @keyframes fall {
             0% {
-                transform: translateY(-10%); /* Start slightly above the viewport */
+                transform: translateY(-10%); 
                 opacity: 0.8;
             }
             100% {
-                transform: translateY(100vh); /* Fall to the bottom */
-                opacity: 0; /* Fade out at the bottom */
+                transform: translateY(100vh); 
+                opacity: 0; 
             }
         }
 
     
-        /* Heart float animation */
+      
         @keyframes floatStar {
             0% {
                 transform: translateY(100vh) scale(0.5);
@@ -98,7 +98,7 @@
             }
         }
 
-        /* Adding some randomness to the position and timing */
+        
         .star:nth-child(odd) {
             animation-duration: 8s;
             animation-delay: 0s;
@@ -144,7 +144,7 @@
             margin: 0 auto;
         }
 
-        /* Gallery Item Styling */
+        
         .masonry-item {
             position: relative;
             overflow: hidden;
@@ -159,7 +159,7 @@
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
         }
 
-        /* Image Styling */
+        
         .masonry-item img {
             width: 100%;
             height: 100%;
@@ -172,7 +172,7 @@
             transform: scale(1.1);
         }
 
-        /* Text Overlay */
+        
         .masonry-item .content {
             position: absolute;
             bottom: 0;
@@ -196,7 +196,7 @@
             margin: 0;
         }
 
-        /* Responsiveness */
+       
         @media screen and (max-width: 768px) {
             h3 {
                 font-size: 2em;
@@ -222,7 +222,6 @@
     <div class="star" style="top: -10%; left: 40%;"></div>
     <div class="star" style="top: -5%; left: 65%;"></div>
 
-    <!-- Add more circles for a denser effect -->
     <div class="star" style="top: -30%; left: 5%;"></div>
     <div class="star" style="top: -40%; left: 15%;"></div>
     <div class="star" style="top: -45%; left: 25%;"></div>
@@ -234,7 +233,6 @@
     <div class="star" style="top: -80%; left: 85%;"></div>
     <div class="star" style="top: -90%; left: 95%;"></div>
 
-    <!-- Add circles starting from the right side -->
     <div class="star" style="top: -10%; left: 90%;"></div>
     <div class="star" style="top: -5%; left: 80%;"></div>
     <div class="star" style="top: -20%; left: 70%;"></div>
