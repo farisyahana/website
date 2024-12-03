@@ -1,6 +1,6 @@
 
 body {
-            background-image: url('kiminonawa.jpg');
+            background-image: url('blueee.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -47,7 +47,7 @@ h2{
     margin-bottom: 10%;
     box-sizing: border-box;
     animation: fadeIn 2s ease-out forwards;
-    animation: float 6s ease-in-out infinite;
+    
 }
 
  @keyframes fadeIn {
@@ -61,12 +61,52 @@ h2{
         }
 }
 
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-10px);
+
+            .w3-top {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .w3-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: skyblue;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .w3-bar-item {
+            text-decoration: none;
+            color: dodgerblue;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .w3-bar-item:hover {
+            color: deepskyblue;
+        }
+
+        .w3-right a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            font-size: 1rem;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .w3-right a:hover {
+            background: deepskyblue;
+            transform: scale(1.1);
+        }
+
+        @media screen and (max-width: 768px) {
+            .w3-right {
+                display: none;
             }
         }
 
@@ -101,8 +141,10 @@ h2{
     flex-basis: 50%;
 }
 
+           
+
 footer {
-    position: fixed; 
+    position: relative; 
     bottom: 0; 
     left: 0;
     width: 100%; 
