@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izyan Mini mart-About Us</title>
+    <style>
+       
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f3ef;
+            scroll-behavior: smooth;
+        }
+
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color:blanchedalmond;
+            padding: 1em 2em;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .navbar img {
+            height: 50px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+        }
+
+        .navbar a:hover {
+            background-color: #ffaf1d;
+            color: white;
+        }
+
+        .navbar a.active {
+            background-color: #f18f00;
+            color: white;
+        }
+
+       
+        .sidebar {
+            position: fixed;
+            top: 120px;
+            left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            z-index: 5;
+            width: 200px; 
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 1em;
+            border-radius: 10px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            padding: 0.5em;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            border-radius: 5px;
+            background-color: #ffaf1d;
+        }
+
+        .sidebar a:hover {
+            background-color: #f18f00;
+        }
+        
+        ul {
+            list-style-type: disc; 
+            list-style-position: inside;
+            padding: 0;
+            margin: 0;
+        }
+
+        
+        .top-image-container {
+            position: relative;
+            background-image: url('mart4.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+        .top-image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+          #logo {
+    text-align: center;
+  }
+  .centered-image {
+    display: block;
+    margin: 0 auto;
+  }
+        
+        .main-content {
+            margin-left: 220px; 
+            padding: 2em;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+        }
+
+       
+        section {
+            padding: 2em;
+            margin: 1em 0;
+            border: 2px solid #ffd37b;
+            border-radius: 10px;
+            background-color: white;
+            position: relative;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #ffaf1d;
+            font-size: 1.5em;
+            margin-bottom: 1em;
+        }
+
+        .section-content {
+            margin-top: 2em;
+        }
+        
+ #chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;    
+    height: 100vh;          
+    overflow: hidden;       
+    text-align: center;
+  }
+
+  #chart img {
+    max-width: 90%;  
+    max-height: 80%; 
+    height: auto;    
+    width: auto;     
+  }
+
+  .section-title {
+    margin-bottom: 20px; 
+  }
+                footer {
+            text-align: center;
+            padding: 1em;
+            background-color: blanchedalmond;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="logomart.jpg" alt="Logo">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="product.html">Product</a>
+            <a href="team.html">Team</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+   
+    <div class="sidebar">
+        <a href="#background">Background</a>
+        <a href="#logo">Logo</a>
+        <a href="#vision">Vision</a>
+        <a href="#mission">Mission</a>
+        <a href="#objectives">Objectives</a>
+    </div>
+
+   
+    <div class="top-image-container">
+        <div class="top-image-overlay"></div>
+        <h1 style="color: white; text-align: center; z-index: 1;">Welcome to Izyan Mini Mart</h1>
+    </div>
+
+    <div class="main-content">
+        <section id="background">
+            <div class="section-content">
+                <h2 class="section-title">Background</h2>
+                <p style="text-align: justify; line-height: 1.5; " >Izyan Mini Mart was established in November 2023 and was a student-centric retail business 
+designed to meet the dynamic needs of the campus community. It serves as a convenient hub, 
+offering a wide range of essential products, including groceries, snacks, beverages, medicines 
+and personal care items, as well as stationeries. With affordability and accessibility at its core, 
+the store aims to provide a seamless shopping experience for students, faculty, and staff. Tailored 
+to the fast-paced lifestyle of young adults, the mini supermarket emphasizes quick service, trendy 
+product selections, and value-added offerings such as grab-and-go meals and late-night 
+essentials. By creating a welcoming atmosphere and offering products that suit the diverse needs 
+of the campus community, the mini mart becomes an important part of students' and staff's daily 
+lives.</p>
+            </div>
+        </section>
+
+                <section id="chart">
+            <div class="section-content">
+                <h2 class="section-title">Organizational Chart</h2>
+                <img src="chartt.jpg" style=" border:2px solid black;" alt="chart">
+            </div>
+        </section>
+<section id="logo">
+    <div class="section-content">
+        <h2 class="section-title">Logo</h2>
+        <img src="logomart.jpg" style=" border:2px solid black;" alt="Centered Image" class="centered-image" width="300" height="200"><br/>
+        <ul style="text-align: justify; line-height: 1.5; ">
+        <li>Orange:
+Orange symbolizes enthusiasm, creativity, and friendliness. It conveys a sense of warmth and approachability, making customers feel welcome. In the context of a mini mart, it suggests a vibrant, student-friendly place where needs are met efficiently.
+</li><br/>
+        <li>
+Black:
+Black continues to symbolize strength, reliability, and professionalism, reassuring customers of quality service and trustworthiness.
+</li><br/>
+        <li>White:
+White represents simplicity and cleanliness, creating a fresh and inviting look for the logo, aligning with the expectations of a modern and organized mini mart.</li><br/>
+    </ul>
+    </div>
+</section>
+        <section id="vision">
+            <div class="section-content">
+                <h2 class="section-title">Vision</h2>
+                <p style="text-align: justify; line-height: 1.5; ">To be the leading convenience store that seamlessly integrates into campus life, enhancing the university experience through exceptional service, community engagement, and sustainable practices.</p>
+            </div>
+        </section>
+
+        <section id="mission">
+            <div class="section-content">
+                <h2 class="section-title">Mission</h2>
+                <p style="text-align: justify; line-height: 1.5; ">To be the main convenience store for the university community, providing easy access to good quality products that meet everyday needs, encourage connections on campus, and improve the well-being of students, teachers, and staff.</p>
+            </div>
+        </section>
+
+        <section id="objectives">
+            <div class="section-content">
+                <h2 class="section-title">Objectives</h2>
+      <ul style="text-align: justify; line-height: 1.5; ">
+        <li>To provide easily accessible and convenient shopping options for students, faculty, and 
+staff, ensuring they have access to essential products close to campus.</li><br/>
+        <li>	To prioritize excellent customer service, ensuring a positive and efficient shopping experience.</li><br/>
+        <li>To foster a connection with the campus community by supporting events, promotions, and collaborations with student organizations.
+</li><br/>
+    </ul>
+            </div>
+        </section>
+    </div>
+    
+        <footer>
+        &copy; 2024 Izyan Mini Mart. All Rights Reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izyan Mini mart-Product</title>
+    <style>
+       
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fdf7f1;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+       
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: blanchedalmond;
+            padding: 1em 2em;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .navbar img {
+            height: 50px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+        }
+
+        .navbar a:hover, .navbar a.active {
+            background-color: #ffaf1d;
+            color: white;
+        }
+
+        
+        .category {
+            margin: 3em auto;
+            padding: 1em;
+            text-align: center;
+        }
+
+        .category-header {
+            background-color: #ffaf1d;
+            color: white;
+            padding: 0.5em;
+            font-size: 1.5em;
+            border-radius: 8px;
+            margin-bottom: 2em;
+        }
+
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5em;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 0 1em;
+        }
+
+        .product-item {
+            background-color: #fff;
+            border: 2px solid #ffd37b;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-item:hover {
+            transform: scale(1.05);
+        }
+
+        .product-item img {
+            width: 50%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 1em;
+        }
+
+        .product-name {
+            font-weight: bold;
+            margin: 0.5em 0;
+            color: #ff8c00;
+        }
+
+        .product-price {
+            color: #333;
+            font-size: 1.1em;
+        }
+                footer {
+            text-align: center;
+            padding: 1em;
+            background-color: blanchedalmond;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+  
+    <div class="navbar">
+        <img src="logomart.jpg" alt="Logo">
+        <div>
+            <a href="index.html" >Home</a>
+            <a href="about.html">About Us</a>
+            <a href="#product.html">Product</a>
+            <a href="team.html">Team</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    
+    <div id="beverages" class="category">
+        <div class="category-header">Food and Beverage</div>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="yeos.jpg" alt="Beverage 1">
+                <div class="product-info">
+                    <div class="product-name">Yeos and Seasons flavoured drink 250 ml</div>
+                    <div class="product-price">RM 1.70</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="FnN.jpg" alt="Beverage 2">
+                <div class="product-info">
+                    <div class="product-name"><ul style="text-align: justify; line-height: 1.5; ">
+        <li>F&amp;N all fun flavour can 325ml</li><br/>
+        <li>Seasons drink can 300 ml</li><br/>
+        <li>100 plus can 325ml</li><br/>
+    </ul>
+                </div>
+                    <div class="product-price">RM 2.50</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="nescafe.jpeg" alt="Beverage 3">
+                <div class="product-info">
+                    <div class="product-name">Nescafe Coffee &amp; Milo can 320 ml</div>
+                    <div class="product-price">RM 3.20</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="calpis.jpeg" alt="Beverage 4">
+                <div class="product-info">
+                    <div class="product-name">Calpis 350ml all flavour</div>
+                    <div class="product-price">RM 3.20</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="bleau.JPEG" alt="Beverage 5">
+                <div class="product-info">
+                    <div class="product-name">Bleau Mineral Water </div>
+                    <div class="product-price">500ml - RM 1.00</div>
+                    <div class="product-price">1500ml - RM 2.20</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="stationaries" class="category">
+        <div class="category-header">Stationeries</div>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="pen.jpeg" alt="Pen Set">
+                <div class="product-info">
+                    <div class="product-name">Faber castell pen 60 click x 5</div>
+                    <div class="product-price">RM 1.20</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="BOOK.JPEG" alt="Notebook">
+                <div class="product-info">
+                    <div class="product-name">Dot down Notebook 60s</div>
+                    <div class="product-price">RM 2.80</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="correction.avif" alt="Eraser Set">
+                <div class="product-info">
+                    <div class="product-name">Correction Tape</div>
+                    <div class="product-price">RM 2.50</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="paper.JPEG" alt="Ruler Pack">
+                <div class="product-info">
+                    <div class="product-name">A4 Foolscap Paper 70Gsm 48 Sheets (8mm)</div>
+                    <div class="product-price">RM 4.20</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="FILE.JPG" alt="Color Pencils">
+                <div class="product-info">
+                    <div class="product-name">A4 Flat Files</div>
+                    <div class="product-price">RM 2.20</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div id="medicines" class="category">
+        <div class="category-header">Medicines</div>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="actifast.jpg" alt="Medicine 1">
+                <div class="product-info">
+                    <div class="product-name">Actifast 10 caplet</div>
+                    <div class="product-price">RM 8.50</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="eyemo.jpeg" alt="Medicine 2">
+                <div class="product-info">
+                    <div class="product-name">Eyemo eye drops 7.5ml </div>
+                    <div class="product-price">RM 4.80</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="handyplast.jpeg" alt="Medicine 3">
+                <div class="product-info">
+                    <div class="product-name">hansaplast Universal water-resistant 20</div>
+                    <div class="product-price">RM 0.50 each strips</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="takahi.jpeg" alt="Medicine 4">
+                <div class="product-info">
+                    <div class="product-name">Takahi Koyo 10 pcs</div>
+                    <div class="product-price">RM 4.80</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="cold%20and%20cough.jpeg" alt="Medicine 5">
+                <div class="product-info">
+                    <div class="product-name">Cold &amp;flu paracetemol</div>
+                    <div class="product-price">RM 8.20</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <div id="personal-care" class="category">
+        <div class="category-header">Personal Care Items</div>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="sunsilk.jpeg" alt="Shampoo">
+                <div class="product-info">
+                    <div class="product-name">Sunsilk shampoo </div>
+                    <div class="product-price">RM 15.90</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="rexona.jpeg" alt="deodorant">
+                <div class="product-info">
+                    <div class="product-name">Rexona all type roll</div>
+                    <div class="product-price">RM13.20</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="brush.webp" alt="Soap">
+                <div class="product-info">
+                    <div class="product-name">Colgate Toothbrush</div>
+                    <div class="product-price">RM 7.90</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="toothpaste.webp" alt="Toothpaste">
+                <div class="product-info">
+                    <div class="product-name">Colgate Toothpaste</div>
+                    <div class="product-price">RM 8.60</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="lifeboy.jpeg" alt="body wash">
+                <div class="product-info">
+                    <div class="product-name">Lifeboy body wash 500 ml</div>
+                    <div class="product-price">RM 19.80</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <div id="snacks" class="category">
+        <div class="category-header">Snacks</div>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="mistermister.JPG" alt="Snack 1">
+                <div class="product-info">
+                    <div class="product-name">Mister Potato 125g</div>
+                    <div class="product-price">RM 5.00</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="misterpacket70g.JPEG" alt="Snack 2">
+                <div class="product-info">
+                    <div class="product-name">Mister Potato Chips 65g all flavour</div>
+                    <div class="product-price">RM 3.70</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="shoyue.jpeg" alt="Snack 3">
+                <div class="product-info">
+                    <div class="product-name">Snekku Shoyuemi Snacks 60g all flavour</div>
+                    <div class="product-price">RM 2.50</div>
+                </div>
+            </div>
+                        <div class="product-item">
+                <img src="corntoz.jpeg" alt="Snack 3">
+                <div class="product-info">
+                    <div class="product-name">Corntoz 100g all flacour</div>
+                    <div class="product-price">RM 3.80</div>
+                </div>
+            </div>
+                        <div class="product-item">
+                <img src="kusuka.jpeg" alt="Snack 3">
+                <div class="product-info">
+                    <div class="product-name">Kusuka Chips 180g all flavour</div>
+                    <div class="product-price">RM 5.80</div>
+                </div>
+            </div>
+             <div class="product-item">
+                <img src="bika.jpeg" alt="Snack 1">
+                <div class="product-info">
+                    <div class="product-name">Bika / Fika 60g all flavour</div>
+                    <div class="product-price">RM 2.60</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer>
+        &copy; 2024 Izyan Mini Mart. All Rights Reserved.
+    </footer>
+</body>
+</html>
